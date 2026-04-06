@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+h1 {
+    background: #4a6cf7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.add-task {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    background: #f8f9fa;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#taskInput:focus {
+    outline: none;
+    border-color: #4a6cf7;
+}
+
+#addBtn {
+    padding: 12px 25px;
+    background: #4a6cf7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addBtn:hover {
+    background: #3b5bd9;
+}
+
+#taskList {
+    list-style: none;
+    padding: 10px 0;
+}
+
+#taskList li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+    transition: all 0.3s;
+}
+
+#taskList li.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+    color: #666;
+}
+
+#taskList li span {
+    flex: 1;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background: #ff3742;
+}

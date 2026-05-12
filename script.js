@@ -9,7 +9,10 @@ function loadTasks() {
         addTaskToDOM(task.text, task.completed);
     });
 }
-
+rsgsgrr;
+StorageManager;
+gsgg;
+SVGFESpecularLightingElement;
 // Save tasks to localStorage
 function saveTasks() {
     const tasks = [];
